@@ -11,7 +11,7 @@ ENV CONFIG_SERVER_ENABLED false
 ENV CONFIG_SERVER_URL http://config.leeln.com
 
 ENV EUREKA_SERVER_ENABLED true
-ENV EUREKA_SERVER_URL http://172.18.139.140:8761/eureka/
+ENV EUREKA_SERVER_URL http://eureka:8761/eureka/
 
 ADD build/libs/${SERVER_NAME}-${VERSION}.jar /opt/app/app.jar
 
