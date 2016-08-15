@@ -1,8 +1,8 @@
 node {
   stage 'build'
-  docker.image('maven:3.3.3-jdk-8').inside {
+  docker.image('openjdk:8u92-jdk-alpine').inside {
     git 'https://github.com/leeln/order-center.git'
-    sh 'mvn clean package'
+    sh './gradlew build'
     archive 'build/libs/*.war'
   }
 
