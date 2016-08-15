@@ -1,6 +1,6 @@
 node {
   stage 'build'
-  docker.image('openjdk:8u92-jdk-alpine').inside {
+  docker.image('frekele/java:jdk8u102').inside {
     git 'https://github.com/leeln/order-center.git'
     sh './gradlew build'
     archive 'build/libs/*.war'
