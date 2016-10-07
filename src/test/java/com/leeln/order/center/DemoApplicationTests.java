@@ -1,4 +1,4 @@
-package org.micoa.ordercenter;
+package com.leeln.order.center;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

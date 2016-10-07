@@ -1,6 +1,6 @@
 FROM leeln/java:jre-8
 
-ENV PROFILES dev
+ENV PROFILES default
 ENV VERSION 0.0.1-SNAPSHOT
 
 ENV HOSTNAME localhost
