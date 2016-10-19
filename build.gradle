@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.4.1.RELEASE'
+		springBootVersion = '1.4.0.RELEASE'
 	}
 	repositories {
 		maven {
@@ -31,9 +31,12 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.cloud:spring-cloud-starter-eureka')
-	compile('org.springframework.boot:spring-boot-starter-web')
-	testCompile('org.springframework.boot:spring-boot-starter-test') 
+	compile 'org.springframework.cloud:spring-cloud-starter-eureka',
+			'org.springframework.cloud:spring-cloud-starter-config',
+			'org.springframework.boot:spring-boot-starter-web'
+
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+
 }
 
 dependencyManagement {
